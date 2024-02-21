@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <main class="loginMain">
+        <!--회원가입섹션-->
+        <section class="login">
+            <article class="login__form__container">
+                <!--회원가입 폼-->
+                <div class="login__form">
+                    <!--로고-->
+                    <!--<h1><img src="/images/logo.jpg" alt=""></h1>-->
+                    <!--로고end-->
+                    <!--회원가입 인풋-->
+                    <form class="login__input"  action="/auth/signup" method="post">
+                        <input type="text" name="username" placeholder="ID" required="required"  maxlength="30"/>
+                        <input type="password" name="password" placeholder="password" required="required" />
+                        <p><input type="email" name="email" placeholder="Email" required="required" />⠀@⠀<input type="email" name="email" placeholder="Email" required="required" /></p>
+                        <input type="text" name="name" placeholder="Name" required="required" />
+                        <p><input type="checkbox"/>개인정보 수집 및 이용에 동의합니다.</p>
+                        <button>가입</button><br>
+                        <p class="login__social-text"> 소셜로 로그인 </p>
+                    </form>
+                    <a href="https://accounts.google.com/"><img src="images/google1.png" alt="icon"></a>
+                    <a href="https://nid.naver.com/"><img src="images/naver1.png" alt="icon"></a>
+                    <a href="https://accounts.kakao.com/"><img src="images/kakao1.png" alt="icon"></a>
+                    <!--회원가입 인풋end-->
+                </div>
+                <!--회원가입 폼end-->
+
+                <!--계정이 있으신가요?-->
+                <div class="login__register">
+                    <span>계정이 있으신가요?</span>
+                    <a href="/auth/signin">로그인</a>
+                </div>
+                <!--계정이 있으신가요?end-->
+            </article>
+        </section>
+    </main>
+</div>
+</body>
+</html>
